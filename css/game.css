@@ -1,14 +1,16 @@
-.background    { background: rgb(50, 90, 50);
+.background    { background-image: url("images/Background.jpg");;
                  table-layout: fixed;
                  border-spacing: 0;   }
 .background td { padding: 0;          }
-.lava          { background: rgb(255, 100, 0); }
-.wall          { background: grey;   }
-.floater       { background: green; }
+.lava          { background-image: url("images/Lava.jpg"); }
+.wall          { background-image: url("images/Walls.jpg");   }
 
 .actor  { position: absolute;  }
-.player { background: rgb(200, 200, 200); }
-.coin { background: gold; }
+.coin   { background-image: url("images/Coin.png");  }
+.player { background-image: url("images/Character.png"); }
+.floater{ background: white; }
+.enemy 	{ background-image: url("images/enemy.png");  }
+.spring { background-image: url("images/Spring.png"); }
 
 .game {
   overflow: hidden;
@@ -16,3 +18,7 @@
   max-height: 450px;
   position: relative;
 }
+
+.lost .player { background-image: url("images/CharacterDead.png"); }
+
+.won .player { background-image: url("images/Win.png");}
